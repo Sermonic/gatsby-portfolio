@@ -1,0 +1,8 @@
+{
+  "provider": "cloudinary",
+  "providerOptions": {
+    "cloud_name": "sermonic",
+    "api_key": "891742382386751",
+    "api_secret": "S9fWfD-UcwWurLXilIfvwpbkIwA"
+  }
+}

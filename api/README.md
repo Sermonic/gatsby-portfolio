@@ -1,0 +1,3 @@
+# Strapi application
+
+Portfolio API
