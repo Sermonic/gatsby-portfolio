@@ -1,9 +1,10 @@
 import React from "react"
-import Layout from "../components/Layout"
-import { graphql } from "gatsby"
-import Title from "../components/Title"
+import { graphql, Link } from "gatsby"
 import Image from "gatsby-image"
+import Layout from "../components/Layout"
+import Title from "../components/Title"
 import SEO from "../components/SEO"
+import CV from "../../static/Shcherbanych_CV.pdf"
 
 const About = ({
   data: {
@@ -20,6 +21,9 @@ const About = ({
           <Image fluid={image.childImageSharp.fluid} className="about-img" />
           <article className="about-text">
             <Title title={title} />
+            <a className="btn btn-cv" href={CV} download="Shcherbanych_CV">
+              Download CV
+            </a>
             <p>{info}</p>
             <div className="about-stack">
               {stack.map(item => {
@@ -27,6 +31,11 @@ const About = ({
               })}
             </div>
           </article>
+        </div>
+        <div className="about-btn">
+          <Link to="/contact" className="btn btn-about">
+            contact me
+          </Link>
         </div>
       </section>
     </Layout>

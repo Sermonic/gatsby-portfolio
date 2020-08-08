@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: "https://vshcherbanych.netlify.app/",
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,

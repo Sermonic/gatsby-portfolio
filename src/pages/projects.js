@@ -1,6 +1,6 @@
 import React from "react"
-import Layout from "../components/Layout"
 import { graphql } from "gatsby"
+import Layout from "../components/Layout"
 import Projects from "../components/Projects"
 
 const ProjectsPage = ({
@@ -8,6 +8,7 @@ const ProjectsPage = ({
     allStrapiProjects: { nodes: projects },
   },
 }) => {
+  console.log(projects)
   return (
     <Layout>
       <section className="projects-page">

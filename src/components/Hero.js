@@ -27,12 +27,15 @@ const Hero = () => {
     <header className="hero">
       <div className="section-center hero-center">
         <article className="hero-info">
-          <div>
+          <div className="hero-container">
             <div className="underline"></div>
-            <h1>i'm vitalik</h1>
-            <h4>Web Developer</h4>
-            <Link to="/contact" className="btn">
-              contact me
+            <h1>Welcome </h1>
+            <h4>
+              If you are here, <br />
+              let me briefly introduce myself
+            </h4>
+            <Link to="/about" className="btn">
+              about me
             </Link>
             <SocialLinks />
           </div>
