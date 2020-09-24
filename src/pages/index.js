@@ -5,7 +5,7 @@ import Hero from "../components/Hero"
 import Services from "../components/Services"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
-import SEO from "../components/SEO"
+import Jobs from "../components/Jobs"
 
 export default ({ data }) => {
   const {
@@ -15,9 +15,9 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home" description="this is a home page" />
       <Hero />
       <Services />
+      <Jobs />
       <Projects projects={projects} title="featured projects" showLink />
       <Blogs blogs={blogs} title="latest articles" showLink />
     </Layout>

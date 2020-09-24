@@ -147,7 +147,7 @@ p {
 }
 /* section */
 .section {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .section-center {
@@ -196,7 +196,7 @@ p {
 /* Navbar */
 
 .navbar {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -409,13 +409,17 @@ Hero
 }
 
 .hero .underline {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   margin-left: 0;
 }
 .hero-info {
   background: var(--clr-primary-10);
 }
 .hero-img {
+  max-height: 60%;
+  left: 40%;
+  top: 15%;
+  position: absolute;
   display: none;
 }
 .hero-info h4 {
@@ -426,7 +430,6 @@ Hero
 }
 .hero .btn {
   margin-top: 0.8rem;
-  /* width: 17%; */
   text-align: center;
 }
 
@@ -542,7 +545,7 @@ Jobs
   background: transparent;
   border-color: transparent;
   text-transform: capitalize;
-  font-size: 1.25rem;
+  font-size: 1rem;
   letter-spacing: var(--spacing);
   margin: 0 0.5rem;
   transition: var(--transition);

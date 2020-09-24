@@ -3,7 +3,6 @@ import { graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 import Layout from "../components/Layout"
 import Title from "../components/Title"
-import SEO from "../components/SEO"
 import CV from "../../static/Shcherbanych_CV.pdf"
 
 const About = ({
@@ -15,7 +14,6 @@ const About = ({
 
   return (
     <Layout>
-      <SEO title="About" description="About Vitaliy Shcherbanych" />
       <section className="about-page">
         <div className="section-center about-center">
           <Image fluid={image.childImageSharp.fluid} className="about-img" />
